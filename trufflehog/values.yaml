@@ -132,7 +132,11 @@ podAnnotations: {}
 
 priorityClass:
   create: true
-  name: "" ## Existing priority class to use if create is false
+  ## If `create` is false, `name` is the name of an existing priority class (or
+  ## empty to not set one) # If `create` is true, then `name` is the name to
+  ## set on the created priorityClass. When empty, defaults to the release
+  ## fullName.
+  name: ""
   value: 1000 ## Priority value, only used if create is true
 
 securityContext:

@@ -450,7 +450,7 @@
         },
         "name": {
           "type": "string",
-          "description": "Existing priority class to use if create is false",
+          "description": "Name of the priority class to use or create (if creating, defaults to the release fullName)",
           "default": ""
         },
         "value": {
@@ -469,15 +469,6 @@
       },
       "then": {
         "required": ["value"]
-      },
-      "else": {
-        "properties": {
-          "name": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
-        "required": ["name"]
       }
     },
     "securityContext": {

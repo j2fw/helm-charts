@@ -20,9 +20,9 @@ spec:
         {{- include "trufflehog.podAnnotations" . | nindent 8 }}
     spec:
       {{- if .Values.priorityClass.create }}
-      priorityClassName: trufflehog-enterprise
+      priorityClassName: {{ .Values.priorityClass.name | default (include "trufflehog.fullname" .) | quote }}
       {{- else if .Values.priorityClass.name }}
-      priorityClassName: {{ .Values.priorityClass.name }}
+      priorityClassName: {{ .Values.priorityClass.name | quote }}
       {{- else }}
       # no priority class, leave it up to the system
       {{- end }}
