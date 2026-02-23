@@ -463,11 +463,14 @@
       "if": {
         "properties": {
           "create": {
-            "const": false
+            "const": true
           }
         }
       },
       "then": {
+        "required": ["value"]
+      },
+      "else": {
         "properties": {
           "name": {
             "type": "string",
@@ -475,13 +478,6 @@
           }
         },
         "required": ["name"]
-      },
-      "else": {
-        "properties": {
-          "value": {
-            "type": "integer"
-          }
-        }
       }
     },
     "securityContext": {
