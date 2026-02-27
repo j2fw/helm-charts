@@ -10,22 +10,6 @@ entries:
     - https://trufflesecurity.github.io/helm-charts/trufflehog-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2026-02-26T22:57:00.51649218Z"
-    description: A Helm chart for TruffleHog Enterprise
-    digest: 9d9a423fcd72db3a7f9f64b0e11874683a0b279d5e549d3ee8a439c1f21d9ff7
-    name: trufflehog
-    urls:
-    - trufflehog-v0.2.9.tgz
-    version: v0.2.9
-  - apiVersion: v2
-    created: "2026-02-27T03:17:19.654924349Z"
-    description: A Helm chart for TruffleHog Enterprise
-    digest: 9b69768eea960485c91cad27037bb354137f9a8b50cb85beddeec0b6b27d9ee4
-    name: trufflehog
-    urls:
-    - trufflehog-0.2.8.tgz
-    version: 0.2.8
-  - apiVersion: v2
     created: "2026-02-18T14:28:31.599539-08:00"
     description: A Helm chart for TruffleHog Enterprise
     digest: 188464b28805dc41dd1c9e9c87a689bb81e749c7b663390261ff59edcef44836
